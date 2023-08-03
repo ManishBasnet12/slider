@@ -1,0 +1,245 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #eee;
+    font-family: poppins;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.swiper.mySwiper1 {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper.mySwiper1 .slide1 {
+    text-align: center;
+    font-size: 18px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    padding-top: 100px;
+}
+
+.swiper.mySwiper1 .slide1 img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.pagination1 {
+    width: 140%;
+    position: fixed;
+    top: 0 !important;
+    height: 50px;
+    background-color: white;
+    border-bottom: 0.5px solid rgb(190, 190, 190);
+}
+
+.pagination1 span{
+    position: relative;
+    width: 30px;
+    bottom: -30px;
+    height: 3px;
+    border-radius: 10vw!important;
+    transition: all 200ms ;
+    transition-delay: none;
+}
+
+.pagination1{
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+  
+}
+
+.pagination1 .swiper-pagination-bullet{
+    background-color: white;
+    color: black;
+    opacity: 1;
+}
+
+.pagination1 .swiper-pagination-bullet-active{
+    background-color: red!important;
+}
+
+.pagination1 span:first-child::before{
+    content: 'Discovery';
+    position: absolute;
+    left: -55%;
+    top: -20px;
+}
+
+
+.pagination1 span:first-child[aria-current="true"]  {
+    margin-left: 40%!important;
+  }
+
+  .pagination1 span:last-child[aria-current="true"]{
+    margin-right: 40%!important;
+  }  
+
+.pagination1 span:last-child::before{
+    content: 'All News';
+    position: absolute;
+    width: max-content;
+    top: -20px;
+    right: -40%;
+}
+
+
+.swiper.mySwiper2 {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper.mySwiper2 .swiper-slide {
+    text-align: left;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100% !important;
+    justify-content: start !important;
+}
+
+.swiper.mySwiper2 .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.swiper.mySwiper2 .swiper-slide .content {
+    margin: 1rem;
+}
+
+.swiper.mySwiper2 .swiper-slide .content h4 {
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+}
+
+.swiper.mySwiper2 .swiper-slide .content p {
+    font-size: 18px;
+    font-weight: 300;
+    color: #414141;
+}
+
+
+.slide3 p i{
+    font-size: 40px;
+    color: rgb(30, 79, 215);
+}
+
+.slide3 .name{
+    font-size: .9rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+
+.notification {
+    margin: 70px 20px 0;
+    
+}
+
+.notification .heading,
+.swiper.mySwiper4 .heading{
+    margin-bottom: 1.5rem;
+}
+
+.notification .heading,
+.notification .card,
+.swiper.mySwiper4 .heading{
+    display: flex;
+    justify-content: space-between;
+}
+
+.notification .heading h2,
+.swiper.mySwiper4 .heading h2{
+    font-size: 1.35rem;
+    font-weight: 600;
+    position: relative;
+}
+
+.notification .heading h2::after,
+.swiper.mySwiper4 .heading h2::after{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+}
+
+.notification .heading p,
+.swiper.mySwiper4 .heading p{
+    font-size: .8rem;
+    font-weight: 600;
+    color: rgb(0, 106, 255);
+}
+
+.notification .card{
+    padding-block: 10px;
+    border-bottom: 1px solid rgb(215, 215, 215);
+}
+
+.notification .card h2{
+    font-size: .95rem;
+    font-weight: 400;
+    width: 84%;
+    text-align: left;
+}
+
+.notification .card .image{
+    width: 16%;
+    aspect-ratio: 1 / 1;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.notification .card .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+
+
+.swiper.mySwiper4{
+    margin-inline: 1rem;
+    margin-top: 1.75rem;
+}
+ .swiper.mySwiper4 img{
+    border-radius: 10px;
+ }
+
+ 
+ .swiper.mySwiper4 .heading h2{
+    font-size: 1.2rem;
+ }
